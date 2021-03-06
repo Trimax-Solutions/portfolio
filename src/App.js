@@ -3,6 +3,7 @@ import Nav from './components/nav';
 import HeroText from './components/hero-text';
 import Social_media from './components/social-media';
 import ContactUS from './components/contact-us';
+import Team from './components/team';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Nav />
       <HeroText />
       <Social_media />
+      <Team />
       <ContactUS />
     </div>
   );
