@@ -5,8 +5,8 @@ import Social_media from "./components/social-media";
 import ContactUS from "./components/contact-us";
 import Team from "./components/team";
 import ProjectCards from "./components/project-cards";
-import "./components/project-cards.css";
 import "./components/team.css";
+import "./components/project-cards.css";
 
 function App() {
   return (
