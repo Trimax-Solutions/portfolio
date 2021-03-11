@@ -10,22 +10,22 @@ function Particle() {
           "particles": {
             line_linked: {
               "color": {
-                "value": "#cecccc"
+                "value": "#000000"
               }
             },
             "number": {
-              "value": 100
+              "value": 50
             },
             "size": {
               "value": 3
             },
             "color": {
-              "value": "#cecccc"
+              "value": "#000000"
             }
           },
           "interactivity": {
             "color": {
-              "value": "#cecccc"
+              "value": "#000000"
             },
             "events": {
               "onhover": {

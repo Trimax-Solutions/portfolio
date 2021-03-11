@@ -5,7 +5,8 @@ import ReactTypingEffect from 'react-typing-effect';
 function HeroText() {
     const TypingStyle = {
         fontWeight: "bold",
-        letterSpacing: "0.3rem"
+        letterSpacing: "0.3rem",
+        color: "maroon"
     }
     return (
         <div>

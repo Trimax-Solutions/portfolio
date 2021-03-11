@@ -20,6 +20,7 @@
   list-style: none;
   display: table;
   text-align: center;
+  color: maroon;
 }
 .team-container .b {
   display: table-cell;
@@ -34,7 +35,7 @@
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #000;
+  background: maroon;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -104,7 +105,7 @@
 }
 
 .container .card .content .content-box h3 {
-  color: #000;
+  color: maroon;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
@@ -145,6 +146,6 @@
 }
 
 .container .card .sci li a:hover {
-  color: cornflowerblue;
+  color: maroon;
   transition: 0.5s;
 }

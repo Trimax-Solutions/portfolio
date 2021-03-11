@@ -34,10 +34,6 @@ function ContactUS() {
                         <input id="email-input" type="text" placeholder="Eg. example@email.com" required="required"/>
                     </div>
                     <div className="form-group">
-                        <label for="phone-input">Enter phone number*</label>
-                        <input id="phone-input" type="text" placeholder="Eg. +1 800 000000" required="required"/>
-                    </div>
-                    <div className="form-group">
                         <label for="message-textarea">Message</label>
                         <textarea id="message-textarea" placeholder="Write us a message"></textarea>
                     </div>

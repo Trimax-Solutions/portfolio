@@ -2,7 +2,6 @@
 .logo {
   color: black;
   margin: 50px;
-  font-size: 30px;
 }
 
 @media only screen and (max-width: 550px) {
@@ -42,7 +41,7 @@
 
 @media only screen and (max-width: 558px) {
   .Big-text {
-    margin-top: 200px;
+    margin-top: 80px;
     font-size: 70px;
     font-weight: 1000;
     margin-left: 30px;
@@ -85,11 +84,11 @@
 }
 
 .social-media .icon-box a:hover {
-  color: cornflowerblue;
+  color: maroon;
   transition: 1s;
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 980px) {
   .social-media {
     display: none;
   }
