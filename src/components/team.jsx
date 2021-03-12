@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebook, FaGithub } from "react-icons/fa";
 
 function Team() {
   return (
-    <div className="team-container">
+    <div className="team-container" id="team">
       <div className="a">
         <div className="b">
           <div className="c">
