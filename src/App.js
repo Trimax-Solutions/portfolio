@@ -5,6 +5,7 @@ import Social_media from "./components/social-media";
 import ContactUS from "./components/contact-us";
 import Team from "./components/team";
 import ProjectCards from "./components/project-cards";
+import Footer from "./components/footer";
 import "./components/team.css";
 import "./components/project-cards.css";
 
@@ -36,6 +37,7 @@ function App() {
       </div>
       <Team />
       <ContactUS />
+      <Footer />
     </div>
   );
 }

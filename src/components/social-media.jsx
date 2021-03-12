@@ -1,6 +1,6 @@
 import React from 'react';
 import './main.css';
-import { FaTwitter, FaFacebook, FaInstagram, FaInternetExplorer } from 'react-icons/fa';
+import { FaTwitter, FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 
 function Social_media() {
     return (
@@ -15,7 +15,7 @@ function Social_media() {
                 <a href="#"><FaInstagram /></a>
             </div>
             <div className="icon-box">
-                <a href="#"><FaInternetExplorer /></a>
+                <a href="#"><FaGithub /></a>
             </div>
         </div>
     )
