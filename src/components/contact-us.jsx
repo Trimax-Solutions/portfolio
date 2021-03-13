@@ -1,61 +1,112 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
+import axios from "axios";
 
 function ContactUS() {
+
+  const [emailInfo, setemailInfo] = useState({
+    firstname: '', 
+    lastname: '',
+    email: '', 
+    message: '', 
+    send: false
+  });
+
+  const formSubmit = async (e) => {
+    e.preventDefault();
+    
+    let data = {
+      firstName: "emailInfo.firstName",
+      lastName: "emailInfo.lastName",
+      email: emailInfo.email,
+      message: emailInfo.message
+    }
+    console.log(data);
+    await axios.post('http://localhost:5000/sendEmail', data)
+    .then((res) => {
+      console.log("Message sent");
+      this.setemailInfo({send: true});
+    })
+    .catch((err)=> {
+      console.log("Message Not Sent : ", err);
+    })
+  }
+
   return (
-    <div className="contact-container" id="contact">
-      <div className="contact-form">
-        <div className="first-container">
-          <div className="info-container">
-            <div>
-              <img className="icon" />
-              <h3>Address</h3>
-              <p>Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US</p>
-            </div>
-            <div>
-              {" "}
-              <img className="icon" />
-              <h3>Lets Talk</h3>
-              <p>+1 800 1236879</p>
-            </div>
-            <div>
-              <img className="icon" />
-              <h3>General Support</h3>
-              <p>contact@example.com</p>
+    <div>
+      <div className="contact-heading">
+        <div className="a">
+          <div className="b">
+            <div className="c">
+              <h2>Contact Us</h2>
             </div>
           </div>
         </div>
-        <div className="second-container">
-          <h2>Send Us A Message</h2>
-          <form>
-            <div className="form-group">
-              <label for="name-input">Tell us your name*</label>
-              <input
-                id="name-input"
-                type="text"
-                placeholder="First name"
-                required="required"
-              />
-              <input type="text" placeholder="Last name" required="required" />
+      </div>
+      <div className="contact-container">
+        <div className="contact-form">
+          <div className="first-container">
+            <div className="info-container">
+              <div>
+                <img className="icon" />
+                <h3>Address</h3>
+                <p>Lahore , Pakistan</p>
+              </div>
+              <div>
+                <img className="icon" />
+                <h3>Lets Talk</h3>
+                <p style={{ color: "#999" }}>+92 3032172369</p>
+                <p style={{ color: "#999" }}>+92 3441103225</p>
+                <p style={{ color: "#999" }}>+92 3104009024</p>
+              </div>
+              <div>
+                <img className="icon" />
+                <h3>General Support</h3>
+                <p style={{ color: "#999" }}>trimax_solutions@gmail.com</p>
+                <p style={{ color: "#999" }}>trimax_solutions@yahoo.com</p>
+              </div>
             </div>
-            <div className="form-group">
-              <label for="email-input">Enter your email*</label>
-              <input
-                id="email-input"
-                type="text"
-                placeholder="Eg. example@email.com"
-                required="required"
-              />
-            </div>
-            <div className="form-group">
-              <label for="message-textarea">Message</label>
-              <textarea
-                id="message-textarea"
-                placeholder="Write us a message"
-              ></textarea>
-            </div>
-            <button>Send message</button>
-          </form>
+          </div>
+          <div className="second-container">
+            <h2>Send Us A Message with your project details and we will contact you as soon as possible.</h2>
+            <form onSubmit={formSubmit}>
+              <div className="form-group">
+                <label for="name-input">Tell us your name*</label>
+                <input
+                  id="name-input"
+                  type="text"
+                  placeholder="First name"
+                  required="required"
+                  onChange={(e) => setemailInfo({ ...emailInfo, firstname: e.target.value })}
+                />
+                <input 
+                  type="text" 
+                  placeholder="Last name" 
+                  required="required" 
+                  onChange={(e) => setemailInfo({ ...emailInfo, lastname: e.target.value })}
+                />
+              </div>
+              <div className="form-group">
+                <label for="email-input">Enter your email*</label>
+                <input
+                  id="email-input"
+                  type="text"
+                  placeholder="Eg. example@email.com"
+                  required="required"
+                  onChange={(e) => setemailInfo({ ...emailInfo, email: e.target.value })}
+                />
+              </div>
+              <div className="form-group">
+                <label for="message-textarea">Message</label>
+                <textarea
+                  id="message-textarea"
+                  placeholder="Write us a message"
+                  onChange={(e) => setemailInfo({ ...emailInfo, message: e.target.value })}
+                ></textarea>
+              </div>
+              <button type="submit" name="submit">Send message</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@ function Particle() {
               }
             },
             "number": {
-              "value": 30
+              "value": 50
             },
             "size": {
               "value": 3

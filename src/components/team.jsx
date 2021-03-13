@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebook, FaGithub } from "react-icons/fa";
 
 function Team() {
   return (
-    <div className="team-container" id="team">
+    <div className="team-container">
       <div className="a">
         <div className="b">
           <div className="c">
@@ -21,7 +21,7 @@ function Team() {
               </div>
               <div className="content-box">
                 <h3>
-                  Someone Famous
+                  Umais Hassan
                   <br />
                   <span>Full stack developer</span>
                 </h3>
@@ -39,7 +39,7 @@ function Team() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://github.com/M-Umais-Hassan">
                   <FaGithub />
                 </a>
               </li>
@@ -52,7 +52,7 @@ function Team() {
               </div>
               <div className="content-box">
                 <h3>
-                  Someone Famous
+                  Muhammad Abuzar
                   <br />
                   <span>Full stack developer</span>
                 </h3>
@@ -70,7 +70,7 @@ function Team() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://github.com/abzuar9658">
                   <FaGithub />
                 </a>
               </li>
@@ -83,7 +83,7 @@ function Team() {
               </div>
               <div className="content-box">
                 <h3>
-                  Someone Famous
+                  Ibad Ahmad
                   <br />
                   <span>Full stack developer</span>
                 </h3>
@@ -101,7 +101,7 @@ function Team() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://github.com/IbadAhmad80">
                   <FaGithub />
                 </a>
               </li>

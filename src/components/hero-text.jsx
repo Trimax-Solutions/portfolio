@@ -13,7 +13,7 @@ function HeroText() {
       <div className="Hero-text">
         <div className="Big-text">
           More Of <br />
-          an agency
+          <span>an agency</span>
         </div>
         <div className="Typing-text">
           <div>

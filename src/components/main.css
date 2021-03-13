@@ -1,25 +1,15 @@
-/* Nav Bar */
-/* .logo {
-  color: black;
-  margin: 50px;
-  margin-top: 10px;
-}
-
-@media only screen and (max-width: 550px) {
-  .logo {
-    margin: 30px;
-  }
-} */
-
 /* Hero-text */
 .Big-text {
   color: black;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 50px;
   margin-right: 10px;
   font-size: 130px;
   font-weight: 1000;
   line-height: 1em;
+}
+.Big-text span {
+  color: maroon;
 }
 
 .Typing-text {
@@ -29,6 +19,13 @@
   line-height: 1.5em;
   margin-right: 10px;
   font-weight: 400;
+  color: #b7b7b7;
+}
+
+@media only screen and (max-width: 930px) {
+  .Typing-text {
+    font-size: 28px;
+  }
 }
 
 @media only screen and (max-width: 790px) {
@@ -37,7 +34,7 @@
     font-weight: 1000;
   }
   .Typing-text {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 

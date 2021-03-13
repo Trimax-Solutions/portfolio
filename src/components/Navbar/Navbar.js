@@ -12,9 +12,9 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="NavbarItems">
+        <img src="logo.png" alt="Logo" width="50px" height="50px" />
         <h1 className="navbar-logo">
-          {/* <img src="logo.png" alt="Logo" /> */}
-          Trimax <span>Solutions</span>
+          Trimax <span class="solutions">Solutions</span>
         </h1>
         <div className="menu-icon" onClick={this.handleClick}>
           <i

@@ -7,6 +7,43 @@
   font-family: "Poppins", sans-serif;
 }
 
+.contact-heading h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 1000;
+  padding: 50px 0 0 0;
+}
+
+.contact-heading .a {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: table;
+  text-align: center;
+  color: maroon;
+}
+.contact-heading .b {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+.contact-heading .c:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: maroon;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.contact-heading .c:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .contact-container {
   margin: 90px 0px;
   height: 100vh;
@@ -55,7 +92,7 @@
   padding: 30px;
 }
 .contact-form .second-container h2 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 400;
   color: #333;
   line-height: 1.2;
@@ -118,7 +155,7 @@
   cursor: pointer;
 }
 .contact-form .second-container form button:hover {
-  background: #333;
+  background: cornflowerblue;
 }
 
 @media screen and (max-width: 800px) {
@@ -132,6 +169,9 @@
   }
   .contact-form > * {
     width: 100%;
+  }
+  .contact-container {
+    margin-bottom: 450px;
   }
   .contact-form .first-container {
     padding: 40px 0;

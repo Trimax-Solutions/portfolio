@@ -15,7 +15,7 @@ function Social_media() {
                 <a href="#"><FaInstagram /></a>
             </div>
             <div className="icon-box">
-                <a href="#"><FaGithub /></a>
+                <a href="https://github.com/Trimax-Solutions"><FaGithub /></a>
             </div>
         </div>
     )
