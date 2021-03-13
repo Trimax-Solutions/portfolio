@@ -14,9 +14,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <br />
-      <br />
-      <br />
       <Particle />
       <HeroText />
       <Social_media />

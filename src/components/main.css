@@ -1,5 +1,5 @@
 /* Nav Bar */
-.logo {
+/* .logo {
   color: black;
   margin: 50px;
   margin-top: 10px;
@@ -9,12 +9,12 @@
   .logo {
     margin: 30px;
   }
-}
+} */
 
 /* Hero-text */
 .Big-text {
   color: black;
-  margin-top: 50px;
+  margin-top: 150px;
   margin-left: 50px;
   margin-right: 10px;
   font-size: 130px;
