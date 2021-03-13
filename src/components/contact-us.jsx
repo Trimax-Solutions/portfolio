@@ -3,25 +3,27 @@ import "./contact.css";
 
 function ContactUS() {
   return (
-    <div className="contact-container" id="contact">
+    <div className="contact-container">
       <div className="contact-form">
         <div className="first-container">
           <div className="info-container">
             <div>
               <img className="icon" />
               <h3>Address</h3>
-              <p>Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US</p>
+              <p>Lahore , Pakistan</p>
             </div>
             <div>
-              {" "}
               <img className="icon" />
               <h3>Lets Talk</h3>
-              <p>+1 800 1236879</p>
+              <p style={{ color: "#999" }}>+92 3032172369</p>
+              <p style={{ color: "#999" }}>+92 3441103225</p>
+              <p style={{ color: "#999" }}>+92 3104009024</p>
             </div>
             <div>
               <img className="icon" />
               <h3>General Support</h3>
-              <p>contact@example.com</p>
+              <p style={{ color: "#999" }}>trimax_solutions@gmail.com</p>
+              <p style={{ color: "#999" }}>trimax_solutions@yahoo.com</p>
             </div>
           </div>
         </div>

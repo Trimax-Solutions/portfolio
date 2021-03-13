@@ -11,9 +11,9 @@
   display: grid;
   font-family: Roboto;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20rem 20rem 20rem;
+  grid-template-rows: 20rem 20rem 20rem 20rem;
   column-gap: 0rem;
-  row-gap: 5rem;
+  row-gap: 4rem;
   padding: 0rem 7rem;
   justify-content: space-around;
   transition: 1s;
@@ -33,8 +33,8 @@
   transform: perspective(1000px);
   box-shadow: 10px 20px 40px rgb(0, 0, 0, 0.25);
   transition: 1s;
-  width: 20rem;
-  height: 20rem;
+  width: 21rem;
+  height: 20.5rem;
 }
 
 .cards:hover,
@@ -63,6 +63,7 @@
   top: 0;
   left: 0;
   object-fit: cover;
+  object-position: 0% 100%;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -95,18 +96,19 @@
   text-align: center;
   font-weight: 700;
   color: #3b1111;
-  line-height: 1.5em;
+  font-size: 1.1rem;
+  line-height: 1rem;
 }
 
 .cards .details .content h2 span {
-  color: #252424;
-  font-size: 0.6em;
+  color: #444141;
+  font-size: 0.75em;
+  text-align: justify;
 }
 
 .cards .details .content .social-icons {
   position: relative;
   display: flex;
-  margin-top: 10px;
 }
 
 .cards .details .content .social-icons a {
@@ -128,15 +130,36 @@
   background: #3b1111;
 }
 
+@media only screen and (max-width: 1450px) {
+  .cards {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .cards {
+    width: 22rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .cards {
+    width: 20rem;
+  }
+}
+
 @media only screen and (max-width: 1250px) {
   .project-cards-container {
     grid-template-columns: 1fr;
-    /* justify-content: center; */
+    row-gap: 5rem;
   }
-
   .cards {
     width: 25rem;
   }
+
+  /* .cards .imgBox .img {
+    object-fit: fill;
+  } */
 }
 
 @media only screen and (max-width: 900px) {
