@@ -20,8 +20,8 @@ app.post('/sendEmail', (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            user: "umaishassan1@gmail.com",
-            password: "Muhammad."
+            user: "",
+            password: ""
         }
     });
 
