@@ -12,8 +12,13 @@ app.post('/sendEmail', cors(), (req, res) => {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
+<<<<<<< HEAD
             user: 'trimaxsolutionteam@gmail.com',
             pass: '4321....'
+=======
+            user: "",
+            password: ""
+>>>>>>> 81fe0260b23289c84d3e85d086b48617f3802fcf
         }
     });
 
@@ -44,5 +49,11 @@ app.post('/sendEmail', cors(), (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
+<<<<<<< HEAD
 
 app.listen(PORT, () => console.log(`The server has started on port: ${PORT}`));
+=======
+app.listen(PORT, () => {
+    console.log(`Server started at port ${PORT}`);
+});
+>>>>>>> 81fe0260b23289c84d3e85d086b48617f3802fcf
