@@ -37,6 +37,15 @@ function App() {
           deployed_plt={"https://gymhut.netlify.app/"}
         />
         <ProjectCards
+          name={"Instagram Clone"}
+          image={"/insta-clone.PNG"}
+          description={
+            "Contain technologies like Firebase, Sass and Redux as a State Management Tool"
+          }
+          github={"https://github.com/IbadAhmad80/Instagarm-Clone"}
+          deployed_plt={"https://instagarm-clone-5b04e.web.app"}
+        />
+        <ProjectCards
           name={"Wheather Guider"}
           image={"/whether-guider.jpeg"}
           description={
@@ -46,13 +55,13 @@ function App() {
           deployed_plt={"https://whether-guider.herokuapp.com/register"}
         />
         <ProjectCards
-          name={"Instagram Clone"}
-          image={"/insta-clone.PNG"}
+          name={"Slack Clone"}
+          image={"/slack-img.jpeg"}
           description={
-            "Contain technologies like Firebase, Sass and Redux as a State Management Tool"
+            "Firebase services used as a primary technology with redux"
           }
-          github={"https://github.com/IbadAhmad80/Instagarm-Clone"}
-          deployed_plt={"https://instagarm-clone-5b04e.web.app"}
+          github={"https://github.com/abzuar9658/slack-chatapp-clone"}
+          deployed_plt={"https://slack-chatapp-clone.web.app/"}
         />
         <ProjectCards
           name={"Slate Clone"}
@@ -69,20 +78,11 @@ function App() {
           deployed_plt={"https://radiant-waters-39974.herokuapp.com/"}
         />
         <ProjectCards
-          name={"Slate Clone"}
-          image={"/gymhut.PNG"}
-          description={
-            "Firebase services used as a primary technology with redux"
-          }
-          github={"https://github.com/IbadAhmad80/BuzzFeed-Clone"}
-          deployed_plt={""}
-        />
-        <ProjectCards
           name={"Social Media App"}
-          image={"/gymhut.PNG"}
+          image={"/social-media-app.jpeg"}
           description={"Social Media App developed with MERN Stack and Redux"}
-          github={""}
-          deployed_plt={""}
+          github={"https://github.com/abzuar9658/Dev-Connect-Social-App"}
+          deployed_plt={"https://slack-chatapp-clone.web.app/"}
         />
         <ProjectCards
           name={"Portfolio Website"}

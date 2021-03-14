@@ -17,7 +17,7 @@ function Team() {
           <div className="card">
             <div className="content">
               <div className="img-box">
-                <img src="team.jpg" alt="team member" />
+                <img src="umais.jpg" alt="team member" />
               </div>
               <div className="content-box">
                 <h3>
@@ -34,7 +34,7 @@ function Team() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/umaix.hassan/">
                   <FaFacebook />
                 </a>
               </li>
@@ -48,7 +48,7 @@ function Team() {
           <div className="card">
             <div className="content">
               <div className="img-box">
-                <img src="team.jpg" alt="team member" />
+                <img src="abuzar.jpg" alt="team member" />
               </div>
               <div className="content-box">
                 <h3>
@@ -65,7 +65,7 @@ function Team() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/abuzarfaisal">
                   <FaFacebook />
                 </a>
               </li>
@@ -96,7 +96,7 @@ function Team() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=100016821878911">
                   <FaFacebook />
                 </a>
               </li>

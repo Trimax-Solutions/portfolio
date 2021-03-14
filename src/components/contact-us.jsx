@@ -12,25 +12,27 @@ function ContactUS() {
     send: false
   });
 
-  const formSubmit = async (e) => {
+  const formSubmit = (e) => {
     e.preventDefault();
     
     let data = {
-      firstName: "emailInfo.firstName",
-      lastName: "emailInfo.lastName",
+      firstname: emailInfo.firstname,
+      lastname: emailInfo.lastname,
       email: emailInfo.email,
       message: emailInfo.message
     }
     console.log(data);
-    await axios.post('http://localhost:5000/sendEmail', data)
+    
+    axios.post('http://localhost:5000/sendEmail', data)
     .then((res) => {
       console.log("Message sent");
-      this.setemailInfo({send: true});
+      setemailInfo({send: true});
     })
     .catch((err)=> {
       console.log("Message Not Sent : ", err);
-    })
+    });
   }
+
 
   return (
     <div>
@@ -62,12 +64,12 @@ function ContactUS() {
               <div>
                 <img className="icon" />
                 <h3>General Support</h3>
-                <p style={{ color: "#999" }}>trimax_solutions@gmail.com</p>
-                <p style={{ color: "#999" }}>trimax_solutions@yahoo.com</p>
+                <p style={{ color: "#999" }}>trimaxsolutionteam@gmail.com</p>
               </div>
             </div>
           </div>
           <div className="second-container">
+            
             <h2>Send Us A Message with your project details and we will contact you as soon as possible.</h2>
             <form onSubmit={formSubmit}>
               <div className="form-group">
@@ -76,12 +78,14 @@ function ContactUS() {
                   id="name-input"
                   type="text"
                   placeholder="First name"
+                  value={emailInfo.firstname}
                   required="required"
                   onChange={(e) => setemailInfo({ ...emailInfo, firstname: e.target.value })}
                 />
                 <input 
                   type="text" 
                   placeholder="Last name" 
+                  value={emailInfo.lastname}
                   required="required" 
                   onChange={(e) => setemailInfo({ ...emailInfo, lastname: e.target.value })}
                 />
@@ -92,19 +96,23 @@ function ContactUS() {
                   id="email-input"
                   type="text"
                   placeholder="Eg. example@email.com"
+                  value={emailInfo.email}
                   required="required"
                   onChange={(e) => setemailInfo({ ...emailInfo, email: e.target.value })}
                 />
               </div>
               <div className="form-group">
-                <label for="message-textarea">Message</label>
+                <label for="message-textarea">Project Details</label>
                 <textarea
                   id="message-textarea"
                   placeholder="Write us a message"
+                  value={emailInfo.message}
                   onChange={(e) => setemailInfo({ ...emailInfo, message: e.target.value })}
                 ></textarea>
               </div>
-              <button type="submit" name="submit">Send message</button>
+              <button type="submit" name="submit">
+                Send message
+              </button>
             </form>
           </div>
         </div>

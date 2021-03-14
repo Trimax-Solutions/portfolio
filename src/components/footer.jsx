@@ -92,7 +92,7 @@ function Footer() {
                 <a href="#">Lahore, Pakistan</a>
               </li>
               <li>
-                <a href="#">trimax_solutions@gmail.com</a>
+                <a href="#">trimaxsolutionteam@gmail.com</a>
               </li>
               <li style={{ display: "flex", flexDirection: "column" }}>
                 <a href="#">+92 3032172369</a>
