@@ -1,14 +1,14 @@
-import Particle from "./components/particles";
-import HeroText from "./components/hero-text";
-import Social_media from "./components/social-media";
-import ContactUS from "./components/contact-us";
-import Team from "./components/team";
-import ProjectCards from "./components/project-cards";
-import Footer from "./components/footer";
-import Navbar from "./components/Navbar/Navbar";
-import "./components/team.css";
-import "./components/project-cards.css";
-import "./components/Navbar/Navbar";
+import Particle from "./component/particles";
+import HeroText from "./component/hero-text";
+import Social_media from "./component/social-media";
+import ContactUS from "./component/contact-us";
+import Team from "./component/team";
+import ProjectCards from "./component/project-cards";
+import Footer from "./component/footer";
+import Navbar from "./component/Navbar/Navbar";
+import "./component/team.css";
+import "./component/project-cards.css";
+import "./component/Navbar/Navbar";
 
 function App() {
   return (
