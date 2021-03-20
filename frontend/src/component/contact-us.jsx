@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./contact.css";
-import axios from "axios";
+import Axios from "axios";
 
 function ContactUS() {
 
@@ -9,7 +9,8 @@ function ContactUS() {
     lastname: '',
     email: '', 
     message: '', 
-    send: false
+    send: false,
+    errorMessge: ''
   });
 
   const formSubmit = (e) => {
@@ -21,16 +22,9 @@ function ContactUS() {
       email: emailInfo.email,
       message: emailInfo.message
     }
-    console.log(data);
-    
-    axios.post('http://localhost:5000/sendEmail', data)
-    .then((res) => {
-      console.log("Message sent");
-      setemailInfo({send: true});
-    })
-    .catch((err)=> {
-      console.log("Message Not Sent : ", err);
-    });
+  
+    Axios.post('http://localhost:5000/sendEmail', data);
+    setemailInfo({ ...emailInfo, errorMessge: 'Your email has been sent successfully, our team will contact you soon.', firstname: '', lastname: '', email: '', message: '' });
   }
 
 
@@ -94,7 +88,7 @@ function ContactUS() {
                 <label for="email-input">Enter your email*</label>
                 <input
                   id="email-input"
-                  type="text"
+                  type="email"
                   placeholder="Eg. example@email.com"
                   value={emailInfo.email}
                   required="required"
@@ -107,9 +101,11 @@ function ContactUS() {
                   id="message-textarea"
                   placeholder="Write us a message"
                   value={emailInfo.message}
+                  required="required"
                   onChange={(e) => setemailInfo({ ...emailInfo, message: e.target.value })}
                 ></textarea>
               </div>
+              <h6>{ emailInfo.errorMessge }</h6>
               <button type="submit" name="submit">
                 Send message
               </button>

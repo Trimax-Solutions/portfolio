@@ -19,7 +19,7 @@ app.post('/sendEmail', cors(), (req, res) => {
 
     var mailOptions = {
         from: '"Trimax Solutions" <trimaxsolutionteam@gmail.com>',
-        to: "umaishassan66u@gmail.com, trimaxsolutionteam@gmail.com",
+        to: "trimaxsolutionteam@gmail.com",
         subject: `Message from ${data.firstname}`,
         html: `
             <h3>Sender Information</h3>

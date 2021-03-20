@@ -177,3 +177,12 @@
     padding: 40px 0;
   }
 }
+
+h6 {
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}

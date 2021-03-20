@@ -141,9 +141,9 @@ nav ul li a:hover::before {
     height: 500px;
     position: absolute;
     top: 80px;
-    left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    background-color: maroon;
   }
 
   .nav-menu.active {
@@ -184,6 +184,7 @@ nav ul li a:hover::before {
   }
 
   .fa-times {
+    position: absolute;
     color: maroon;
     font-size: 2rem;
   }
@@ -224,5 +225,3 @@ nav ul li a:hover::before {
     border-radius: 0px;
   }
 }
-
-/*Just changing for added in repository*/
