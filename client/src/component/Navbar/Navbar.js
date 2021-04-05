@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
-
+import { FaTimes, FaBars, FaEraser } from 'react-icons/fa';
 class Navbar extends Component {
   state = { clicked: false };
 
@@ -17,9 +17,7 @@ class Navbar extends Component {
           Trimax <span class="solutions">Solutions</span>
         </h1>
         <div className="menu-icon" onClick={this.handleClick}>
-          <i
-            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
-          ></i>
+          {this.state.clicked ? <FaTimes /> : <FaBars />}
         </div>
         <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {

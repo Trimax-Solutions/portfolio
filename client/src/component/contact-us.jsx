@@ -3,30 +3,36 @@ import "./contact.css";
 import Axios from "axios";
 
 function ContactUS() {
-
   const [emailInfo, setemailInfo] = useState({
-    firstname: '', 
-    lastname: '',
-    email: '', 
-    message: '', 
+    firstname: "",
+    lastname: "",
+    email: "",
+    message: "",
     send: false,
-    errorMessge: ''
+    errorMessge: "",
   });
 
   const formSubmit = (e) => {
     e.preventDefault();
-    
+
     let data = {
       firstname: emailInfo.firstname,
       lastname: emailInfo.lastname,
       email: emailInfo.email,
-      message: emailInfo.message
-    }
-  
-    Axios.post('http://localhost:5000/sendEmail', data);
-    setemailInfo({ ...emailInfo, errorMessge: 'Your email has been sent successfully, our team will contact you soon.', firstname: '', lastname: '', email: '', message: '' });
-  }
+      message: emailInfo.message,
+    };
 
+    Axios.post("https://infinite-ocean-41607.herokuapp.com/sendEmail", data);
+    setemailInfo({
+      ...emailInfo,
+      errorMessge:
+        "Your email has been sent successfully, our team will contact you soon.",
+      firstname: "",
+      lastname: "",
+      email: "",
+      message: "",
+    });
+  };
 
   return (
     <div>
@@ -63,8 +69,10 @@ function ContactUS() {
             </div>
           </div>
           <div className="second-container">
-            
-            <h2>Send Us A Message with your project details and we will contact you as soon as possible.</h2>
+            <h2>
+              Send Us A Message with your project details and we will contact
+              you as soon as possible.
+            </h2>
             <form onSubmit={formSubmit}>
               <div className="form-group">
                 <label for="name-input">Tell us your name*</label>
@@ -74,14 +82,18 @@ function ContactUS() {
                   placeholder="First name"
                   value={emailInfo.firstname}
                   required="required"
-                  onChange={(e) => setemailInfo({ ...emailInfo, firstname: e.target.value })}
+                  onChange={(e) =>
+                    setemailInfo({ ...emailInfo, firstname: e.target.value })
+                  }
                 />
-                <input 
-                  type="text" 
-                  placeholder="Last name" 
+                <input
+                  type="text"
+                  placeholder="Last name"
                   value={emailInfo.lastname}
-                  required="required" 
-                  onChange={(e) => setemailInfo({ ...emailInfo, lastname: e.target.value })}
+                  required="required"
+                  onChange={(e) =>
+                    setemailInfo({ ...emailInfo, lastname: e.target.value })
+                  }
                 />
               </div>
               <div className="form-group">
@@ -92,7 +104,9 @@ function ContactUS() {
                   placeholder="Eg. example@email.com"
                   value={emailInfo.email}
                   required="required"
-                  onChange={(e) => setemailInfo({ ...emailInfo, email: e.target.value })}
+                  onChange={(e) =>
+                    setemailInfo({ ...emailInfo, email: e.target.value })
+                  }
                 />
               </div>
               <div className="form-group">
@@ -102,10 +116,12 @@ function ContactUS() {
                   placeholder="Write us a message"
                   value={emailInfo.message}
                   required="required"
-                  onChange={(e) => setemailInfo({ ...emailInfo, message: e.target.value })}
+                  onChange={(e) =>
+                    setemailInfo({ ...emailInfo, message: e.target.value })
+                  }
                 ></textarea>
               </div>
-              <h6>{ emailInfo.errorMessge }</h6>
+              <h6>{emailInfo.errorMessge}</h6>
               <button type="submit" name="submit">
                 Send message
               </button>

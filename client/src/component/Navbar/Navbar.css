@@ -141,17 +141,30 @@ nav ul li a:hover::before {
     height: 500px;
     position: absolute;
     top: 80px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    background-color: maroon;
+    /* animation: animate 1s linear; */
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease-out;
+  }
+  @keyframes animate {
+    0% {
+      transform: translateX(-90%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 
   .nav-menu.active {
     background: #750e0e;
+    transition: all 1s ease-out;
+    display: block;
     left: 0;
     opacity: 1;
-    transition: all 0.5s ease;
     z-index: 1;
+    clip-path: circle(1000px at 90% 10%);
+    -webkit-clip-path: circle(1000px at 90% 10%);
+    transition: all 1s ease-out;
   }
 
   .nav-links {
@@ -162,8 +175,10 @@ nav ul li a:hover::before {
   }
 
   .nav-links:hover {
-    background-color: #731b1b;
+    background-color: #fff;
+    color: maroon;
     border-radius: 0;
+    transition: all 0.5s ease;
   }
 
   .navbar-logo {
@@ -181,25 +196,7 @@ nav ul li a:hover::before {
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-  }
-
-  .fa-times {
-    position: absolute;
     color: maroon;
-    font-size: 2rem;
-  }
-
-  .nav-links-mobile {
-    display: block;
-    text-align: center;
-    padding: 1.5rem;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    background: #4ad9e4;
-    text-decoration: none;
-    color: #000;
-    font-size: 1.5rem;
   }
 
   .nav-links-mobile:hover {
